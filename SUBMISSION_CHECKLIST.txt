@@ -1,0 +1,11 @@
+BEFORE UPLOADING
+1. Replace student/team details in PROJECT_REPORT.md.
+2. Configure .env using .env.example (never upload real .env secrets).
+3. Run npm install.
+4. Start MongoDB / configure MongoDB Atlas URI.
+5. Run npm run seed.
+6. Run npm start and verify GET /api/health.
+7. Import Postman collection and test endpoints; take genuine screenshots.
+8. Upload ZIP and report if your LMS requires separate files.
+
+Note: This is a source-code starter submission package. You must run it and verify it in your environment before claiming successful execution.

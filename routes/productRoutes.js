@@ -1,0 +1,2 @@
+const r=require('express').Router();const c=require('../controllers/productController');const {protect,authorize}=require('../middleware/authMiddleware');
+r.get('/',c.list);r.get('/:id',c.get);r.post('/',protect,authorize('seller','admin'),c.create);r.patch('/:id',protect,authorize('seller','admin'),c.update);r.delete('/:id',protect,authorize('seller','admin'),c.remove);r.patch('/:id/stock',protect,authorize('seller','admin'),c.adjustStock);module.exports=r;
